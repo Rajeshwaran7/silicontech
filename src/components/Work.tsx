@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ArrowUpRight, Cpu, GitBranch, Terminal } from "lucide-react";
+import { ArrowUpRight, MessageSquare, ShoppingBag, TrendingUp, Users } from "lucide-react";
 
 interface Project {
   number: string;
@@ -10,55 +10,55 @@ interface Project {
   conceptLabel: string;
   description: string;
   stack: string[];
-  visualType: "ai-ops" | "enterprise-flow" | "customer-platform" | "data-pipeline";
+  visualType: "ai-copilot" | "commerce" | "support" | "analytics";
 }
 
 const projects: Project[] = [
   {
     number: "01",
-    title: "AI Operations Platform",
-    category: "Autonomous Control Plane",
+    title: "Smart Business Copilot",
+    category: "Internal AI Assistant",
     conceptLabel: "Concept",
     description:
-      "A unified control plane for coordinating multi-agent deployments, monitoring latency degradation, and dynamic token routing across heterogeneous model clusters.",
-    stack: ["Next.js", "TypeScript", "Python", "pgvector", "gRPC"],
-    visualType: "ai-ops",
+      "An intelligent assistant that connects to your company documents, answers employee questions in seconds, and automatically prepares daily reports and summaries without manual effort.",
+    stack: ["Instant Answers", "Document Search", "Auto-Summaries", "Workflow Automation"],
+    visualType: "ai-copilot",
   },
   {
     number: "02",
-    title: "Enterprise Workflow System",
-    category: "Distributed Orchestration",
+    title: "Modern Commerce & Store Platform",
+    category: "High-Speed Web & Mobile Store",
     conceptLabel: "Concept",
     description:
-      "High-throughput state machine and automated event orchestrator handling millions of concurrent financial transactions with zero data loss.",
-    stack: ["Node.js", "NestJS", "PostgreSQL", "Kafka", "Docker"],
-    visualType: "enterprise-flow",
+      "A lightning-fast online shopping platform engineered for zero friction. Features instant search, personalized product recommendations, and 1-tap checkout that boosts sales.",
+    stack: ["Instant 1-Tap Checkout", "Real-Time Inventory", "Mobile & Web App", "Bank-Grade Security"],
+    visualType: "commerce",
   },
   {
     number: "03",
-    title: "Intelligent Customer Platform",
-    category: "Adaptive Interface",
+    title: "24/7 AI Customer Support Desk",
+    category: "Automated Customer Service",
     conceptLabel: "Concept",
     description:
-      "Self-synthesizing omnichannel support platform featuring real-time speech transcription, context memory retrieval, and predictive agent handoff.",
-    stack: ["React", "WebSockets", "FastAPI", "Redis", "AWS"],
-    visualType: "customer-platform",
+      "An automated customer care assistant that answers inquiries, resolves complaints, and tracks orders 24 hours a day with friendly, human-like accuracy and zero wait time.",
+    stack: ["24/7 Instant Responses", "Multi-Language", "Order Status Tracking", "Friendly Tone"],
+    visualType: "support",
   },
   {
     number: "04",
-    title: "Autonomous Data Pipeline",
-    category: "Streaming ETL & Anomaly Engine",
+    title: "Real-Time Business Pulse Dashboard",
+    category: "Executive Insights & Analytics",
     conceptLabel: "Concept",
     description:
-      "Self-healing streaming ETL engine with automated schema migration, continuous anomaly detection, and synthetic test generation.",
-    stack: ["Go", "ClickHouse", "Terraform", "Kubernetes", "PyTorch"],
-    visualType: "data-pipeline",
+      "A single clean visual dashboard that gives business owners complete clarity over sales, revenue, team performance, and inventory trends without messy spreadsheets.",
+    stack: ["Live Sales Tracking", "Automatic Weekly Reports", "Inventory Alerts", "Phone & Tablet Ready"],
+    visualType: "analytics",
   },
 ];
 
 export default function Work() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const [activeTab, setActiveTab] = useState<Record<number, "ui" | "telemetry">>({
+  const [activeTab, setActiveTab] = useState<Record<number, "ui" | "benefits">>({
     0: "ui",
     1: "ui",
     2: "ui",
@@ -79,7 +79,7 @@ export default function Work() {
           </h2>
         </div>
         <p className="text-sm font-mono text-[#52525b] uppercase tracking-wider max-w-xs">
-          Architectural paradigms &amp; product explorations drafted for the future of software.
+          Practical digital products &amp; AI solutions engineered for growing businesses.
         </p>
       </div>
 
@@ -97,27 +97,27 @@ export default function Work() {
               onMouseLeave={() => setHoveredIndex(null)}
               className="group relative"
             >
-              {/* Asymmetric Grid: Alternating weights for editorial cadence */}
+              {/* Asymmetric Grid */}
               <div
                 className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center ${
                   isEven ? "" : "lg:flex-row-reverse"
                 }`}
               >
-                {/* Visual Preview: Styled as an authentic high-fidelity digital system interface */}
+                {/* Visual Preview */}
                 <div
                   className={`${
                     isEven ? "lg:col-span-7" : "lg:col-span-7 lg:order-2"
                   } relative`}
                 >
                   <div className="rounded-2xl border border-white/[0.08] bg-[#090b10] overflow-hidden transition-all duration-500 shadow-2xl group-hover:border-[#ff6200]/40 group-hover:shadow-[0_0_35px_rgba(255,98,0,0.12)]">
-                    {/* Top Interface Bar with concept badge */}
+                    {/* Top Interface Bar */}
                     <div className="flex items-center justify-between px-5 py-3.5 border-b border-white/[0.06] bg-black/40 text-xs font-mono">
                       <div className="flex items-center gap-2.5">
                         <span className="w-2.5 h-2.5 rounded-full bg-white/10" />
                         <span className="w-2.5 h-2.5 rounded-full bg-white/10" />
                         <span className="w-2.5 h-2.5 rounded-full bg-white/10" />
                         <span className="ml-2 text-[#52525b] text-[11px]">
-                          sys://project-{project.number}.silicontechie
+                          app://project-{project.number}.silicontechie.ai
                         </span>
                       </div>
 
@@ -133,19 +133,19 @@ export default function Work() {
                               : "text-[#52525b] hover:text-[#9ca3af]"
                           }`}
                         >
-                          Interface
+                          Product Preview
                         </button>
                         <button
                           onClick={() =>
-                            setActiveTab({ ...activeTab, [idx]: "telemetry" })
+                            setActiveTab({ ...activeTab, [idx]: "benefits" })
                           }
                           className={`px-2 py-0.5 rounded text-[10px] uppercase tracking-wider transition-colors ${
-                            currentTab === "telemetry"
+                            currentTab === "benefits"
                               ? "bg-[#ff6200]/15 text-[#ff6200] border border-[#ff6200]/30"
                               : "text-[#52525b] hover:text-[#9ca3af]"
                           }`}
                         >
-                          Telemetry
+                          Key Benefits
                         </button>
                         <span className="ml-2 px-2 py-0.5 rounded-full bg-white/[0.05] border border-white/10 text-[10px] text-[#ff6200] font-semibold">
                           {project.conceptLabel}
@@ -157,136 +157,167 @@ export default function Work() {
                     <div className="p-6 sm:p-8 min-h-[320px] sm:min-h-[380px] flex flex-col justify-between relative bg-gradient-to-b from-[#0b0e14] to-[#07080b]">
                       {currentTab === "ui" ? (
                         <>
-                          {project.visualType === "ai-ops" && (
+                          {project.visualType === "ai-copilot" && (
                             <div className="space-y-4">
                               <div className="flex items-center justify-between pb-3 border-b border-white/[0.04]">
                                 <div className="flex items-center gap-2">
-                                  <Cpu className="w-4 h-4 text-[#ff6200]" />
+                                  <Users className="w-4 h-4 text-[#ff6200]" />
                                   <span className="text-xs font-mono font-medium text-white">
-                                    Agent Swarm Router // Cluster 09
+                                    Company AI Assistant // Active Workspace
                                   </span>
                                 </div>
                                 <span className="font-mono text-[11px] text-[#ff6200]">
-                                  Active • 1,240 tokens/s
+                                  Online • Instant Answer
                                 </span>
                               </div>
 
                               <div className="grid grid-cols-3 gap-3 font-mono text-xs">
                                 <div className="p-3 rounded-lg bg-black/40 border border-white/[0.05]">
-                                  <div className="text-[10px] text-[#52525b]">ROUTER INGRESS</div>
-                                  <div className="text-[#f4f4f6] font-medium mt-1">99.98% OK</div>
-                                  <div className="text-[10px] text-[#ff6200] mt-0.5">p50: 12ms</div>
+                                  <div className="text-[10px] text-[#52525b]">RESPONSE TIME</div>
+                                  <div className="text-[#f4f4f6] font-medium mt-1">&lt; 1 Second</div>
+                                  <div className="text-[10px] text-[#ff6200] mt-0.5">Instant speed</div>
                                 </div>
                                 <div className="p-3 rounded-lg bg-black/40 border border-white/[0.05]">
-                                  <div className="text-[10px] text-[#52525b]">MODEL CLUSTERS</div>
-                                  <div className="text-[#f4f4f6] font-medium mt-1">3 Models Live</div>
-                                  <div className="text-[10px] text-[#ff6200] mt-0.5">Auto-Balanced</div>
+                                  <div className="text-[10px] text-[#52525b]">ACCURACY</div>
+                                  <div className="text-[#f4f4f6] font-medium mt-1">99.4% Verified</div>
+                                  <div className="text-[10px] text-[#ff6200] mt-0.5">Zero guesses</div>
                                 </div>
                                 <div className="p-3 rounded-lg bg-black/40 border border-white/[0.05]">
-                                  <div className="text-[10px] text-[#52525b]">SEMANTIC RETRIEVAL</div>
-                                  <div className="text-[#f4f4f6] font-medium mt-1">0.96 Score</div>
-                                  <div className="text-[10px] text-[#ff6200] mt-0.5">Vector Cosine</div>
+                                  <div className="text-[10px] text-[#52525b]">TIME SAVED</div>
+                                  <div className="text-[#f4f4f6] font-medium mt-1">15+ hrs/wk</div>
+                                  <div className="text-[10px] text-[#ff6200] mt-0.5">Per team member</div>
                                 </div>
                               </div>
 
-                              {/* Terminal-like agent dialogue */}
-                              <div className="mt-4 p-3.5 rounded-lg bg-black/60 border border-white/[0.05] font-mono text-[11px] text-[#9ca3af] space-y-1.5">
-                                <div className="text-[#52525b]">&gt; [AGENT-01] Query parsed: Synthesizing architecture dependency tree...</div>
-                                <div className="text-white">&gt; [AGENT-02] Tool invocation: schema_verify() returned status: SUCCESS</div>
-                                <div className="text-[#ff6200]">&gt; [ROUTER] Emitted verified response in 184ms</div>
+                              {/* Sample Real World Chat */}
+                              <div className="mt-4 p-3.5 rounded-lg bg-black/60 border border-white/[0.05] font-mono text-[11px] text-[#9ca3af] space-y-2">
+                                <div className="text-[#52525b]">
+                                  <span className="text-white font-medium">Employee:</span> &ldquo;Summarize last month&apos;s sales and list our 3 biggest customer questions.&rdquo;
+                                </div>
+                                <div className="text-[#ff6200] bg-[#ff6200]/10 p-2.5 rounded border border-[#ff6200]/20">
+                                  <span className="font-bold text-white">AI Copilot:</span> Sales reached \$142,000 (+18%). Top 3 queries: 1. Delivery timelines to Chennai, 2. Bulk pricing discounts, 3. Warranty renewals. (Linked to Company Files)
+                                </div>
                               </div>
                             </div>
                           )}
 
-                          {project.visualType === "enterprise-flow" && (
+                          {project.visualType === "commerce" && (
                             <div className="space-y-4">
                               <div className="flex items-center justify-between pb-3 border-b border-white/[0.04]">
                                 <div className="flex items-center gap-2">
-                                  <GitBranch className="w-4 h-4 text-[#ff6200]" />
+                                  <ShoppingBag className="w-4 h-4 text-[#ff6200]" />
                                   <span className="text-xs font-mono font-medium text-white">
-                                    Transactional DAG Pipeline // Node 14
+                                    Next-Gen Storefront // 0.2s Page Speed
                                   </span>
                                 </div>
                                 <span className="font-mono text-[11px] text-[#ff6200]">
-                                  0 Retries • Idempotent
+                                  Zero Checkout Friction
                                 </span>
                               </div>
 
-                              <div className="space-y-2.5 font-mono text-xs">
+                              <div className="grid grid-cols-3 gap-3 font-mono text-xs">
+                                <div className="p-3 rounded-lg bg-black/40 border border-white/[0.05]">
+                                  <div className="text-[10px] text-[#52525b]">PAGE SPEED</div>
+                                  <div className="text-[#f4f4f6] font-medium mt-1">0.2s Instant</div>
+                                  <div className="text-[10px] text-[#ff6200] mt-0.5">Zero lag</div>
+                                </div>
+                                <div className="p-3 rounded-lg bg-black/40 border border-white/[0.05]">
+                                  <div className="text-[10px] text-[#52525b]">SALES INCREASE</div>
+                                  <div className="text-[#f4f4f6] font-medium mt-1">+32% More</div>
+                                  <div className="text-[10px] text-[#ff6200] mt-0.5">Higher conversion</div>
+                                </div>
+                                <div className="p-3 rounded-lg bg-black/40 border border-white/[0.05]">
+                                  <div className="text-[10px] text-[#52525b]">ABANDONED CARTS</div>
+                                  <div className="text-[#f4f4f6] font-medium mt-1">-40% Drop</div>
+                                  <div className="text-[10px] text-[#ff6200] mt-0.5">1-tap payment</div>
+                                </div>
+                              </div>
+
+                              <div className="space-y-2 font-mono text-xs">
                                 <div className="flex items-center justify-between p-2.5 rounded bg-black/40 border border-white/[0.05]">
-                                  <span className="text-[#9ca3af]">01. Event Queue Ingest</span>
-                                  <span className="text-[#ff6200]">54,200 msg/s</span>
+                                  <span className="text-[#9ca3af]">1-Tap Payment Integration (Apple Pay, UPI, Cards)</span>
+                                  <span className="text-[#ff6200]">Active</span>
                                 </div>
                                 <div className="flex items-center justify-between p-2.5 rounded bg-black/40 border border-white/[0.05]">
-                                  <span className="text-[#9ca3af]">02. Distributed Ledger Sign</span>
-                                  <span className="text-[#ff6200]">Verified RSA-4096</span>
-                                </div>
-                                <div className="flex items-center justify-between p-2.5 rounded bg-black/40 border border-white/[0.05]">
-                                  <span className="text-[#9ca3af]">03. Postgres Multi-Master Sync</span>
-                                  <span className="text-[#ff6200]">ACID Guaranteed</span>
+                                  <span className="text-[#9ca3af]">Live Inventory Sync Between Warehouse &amp; Website</span>
+                                  <span className="text-[#ff6200]">Synced</span>
                                 </div>
                               </div>
                             </div>
                           )}
 
-                          {project.visualType === "customer-platform" && (
+                          {project.visualType === "support" && (
                             <div className="space-y-4">
                               <div className="flex items-center justify-between pb-3 border-b border-white/[0.04]">
                                 <div className="flex items-center gap-2">
-                                  <Terminal className="w-4 h-4 text-[#ff6200]" />
+                                  <MessageSquare className="w-4 h-4 text-[#ff6200]" />
                                   <span className="text-xs font-mono font-medium text-white">
-                                    Adaptive Semantic Handoff Engine
+                                    24/7 Customer Care Assistant
                                   </span>
                                 </div>
                                 <span className="font-mono text-[11px] text-[#ff6200]">
-                                  Live Context 98.4%
+                                  0 Seconds Wait Time
                                 </span>
                               </div>
 
                               <div className="grid grid-cols-2 gap-3 font-mono text-xs">
                                 <div className="p-3 rounded bg-black/40 border border-white/[0.05]">
-                                  <div className="text-[#52525b] text-[10px]">INTENT RESOLUTION</div>
-                                  <div className="text-white mt-1">Autonomous Tier 1</div>
+                                  <div className="text-[#52525b] text-[10px]">RESOLVED AUTOMATICALLY</div>
+                                  <div className="text-white mt-1">88% of all inquiries</div>
+                                  <div className="text-[10px] text-[#ff6200] mt-0.5">No human needed</div>
                                 </div>
                                 <div className="p-3 rounded bg-black/40 border border-white/[0.05]">
-                                  <div className="text-[#52525b] text-[10px]">AUDIO TRANSCRIPTION</div>
-                                  <div className="text-[#ff6200] mt-1">&lt; 140ms Streaming</div>
+                                  <div className="text-[#52525b] text-[10px]">CUSTOMER RATING</div>
+                                  <div className="text-[#ff6200] mt-1">4.9 / 5.0 Stars</div>
+                                  <div className="text-[10px] text-white/60 mt-0.5">Friendly &amp; accurate</div>
                                 </div>
                               </div>
 
-                              <div className="p-3 rounded-lg bg-black/60 border border-white/[0.05] font-mono text-[11px] text-[#9ca3af]">
-                                <span className="text-[#ff6200]">[REAL-TIME VECTOR]</span> Context memory graph hydrated from past 4 sessions.
+                              <div className="p-3.5 rounded-lg bg-black/60 border border-white/[0.05] font-mono text-[11px] text-[#9ca3af] space-y-1.5">
+                                <div className="text-[#52525b]">
+                                  <span className="text-white">Customer:</span> &ldquo;Can I change my order delivery address to Thoothukudi?&rdquo;
+                                </div>
+                                <div className="text-[#ff6200]">
+                                  <span className="font-bold text-white">Support AI:</span> &ldquo;Done! Your delivery destination has been updated to Thoothukudi. Your delivery tracking link has been updated automatically.&rdquo;
+                                </div>
                               </div>
                             </div>
                           )}
 
-                          {project.visualType === "data-pipeline" && (
+                          {project.visualType === "analytics" && (
                             <div className="space-y-4">
                               <div className="flex items-center justify-between pb-3 border-b border-white/[0.04]">
                                 <div className="flex items-center gap-2">
-                                  <Cpu className="w-4 h-4 text-[#ff6200]" />
+                                  <TrendingUp className="w-4 h-4 text-[#ff6200]" />
                                   <span className="text-xs font-mono font-medium text-white">
-                                    Self-Healing Streaming Engine
+                                    Business Overview Dashboard
                                   </span>
                                 </div>
                                 <span className="font-mono text-[11px] text-[#ff6200]">
-                                  Partition Health 100%
+                                  Live Real-Time Data
                                 </span>
                               </div>
 
                               <div className="grid grid-cols-3 gap-2.5 font-mono text-xs text-center">
                                 <div className="p-2.5 rounded bg-black/40 border border-white/[0.05]">
-                                  <div className="text-[10px] text-[#52525b]">THROUGHPUT</div>
-                                  <div className="text-white mt-1">1.8 GB/s</div>
+                                  <div className="text-[10px] text-[#52525b]">THIS MONTH SALES</div>
+                                  <div className="text-white font-bold mt-1">₹14,80,000</div>
+                                  <div className="text-[10px] text-[#ff6200] mt-0.5">+22% Growth</div>
                                 </div>
                                 <div className="p-2.5 rounded bg-black/40 border border-white/[0.05]">
-                                  <div className="text-[10px] text-[#52525b]">ANOMALIES</div>
-                                  <div className="text-[#ff6200] mt-1">0 Detected</div>
+                                  <div className="text-[10px] text-[#52525b]">NEW CUSTOMERS</div>
+                                  <div className="text-[#ff6200] font-bold mt-1">+1,420</div>
+                                  <div className="text-[10px] text-white/60 mt-0.5">From web &amp; mobile</div>
                                 </div>
                                 <div className="p-2.5 rounded bg-black/40 border border-white/[0.05]">
-                                  <div className="text-[10px] text-[#52525b]">SCHEMA EVOLUTION</div>
-                                  <div className="text-white mt-1">Auto-Migrated</div>
+                                  <div className="text-[10px] text-[#52525b]">WEEKLY REPORT</div>
+                                  <div className="text-white font-bold mt-1">Auto-Sent</div>
+                                  <div className="text-[10px] text-[#ff6200] mt-0.5">Monday 8 AM</div>
                                 </div>
+                              </div>
+
+                              <div className="p-3 rounded-lg bg-black/60 border border-white/[0.05] font-mono text-[11px] text-[#9ca3af]">
+                                <span className="text-[#ff6200]">Smart Alert:</span> Top-selling product is running low. Reorder notification sent to vendor.
                               </div>
                             </div>
                           )}
@@ -294,31 +325,31 @@ export default function Work() {
                       ) : (
                         <div className="font-mono text-xs text-[#9ca3af] space-y-3">
                           <div className="text-[#52525b] pb-2 border-b border-white/[0.05]">
-                            SYSTEM RUNTIME LOGS &amp; DIAGNOSTICS:
+                            BUSINESS IMPACT &amp; RETURN ON INVESTMENT:
                           </div>
                           <div className="flex justify-between">
-                            <span>MEMORY UTILIZATION:</span>
-                            <span className="text-white">41.2% OF ALLOCATED</span>
+                            <span>HOURS SAVED PER WEEK:</span>
+                            <span className="text-white">15 to 25 Hours</span>
                           </div>
                           <div className="flex justify-between">
-                            <span>GARBAGE COLLECTION PAUSE:</span>
-                            <span className="text-[#ff6200]">&lt; 1.4ms</span>
+                            <span>OPERATIONAL COST REDUCTION:</span>
+                            <span className="text-[#ff6200]">Up to 40%</span>
                           </div>
                           <div className="flex justify-between">
-                            <span>REPLICATION LAG:</span>
-                            <span className="text-[#ff6200]">0.00ms (SYNC)</span>
+                            <span>CUSTOMER RESPONSE SPEED:</span>
+                            <span className="text-[#ff6200]">Instant (Zero Wait)</span>
                           </div>
                           <div className="flex justify-between">
-                            <span>CRYPTO CERT VALIDATION:</span>
-                            <span className="text-white">VERIFIED TLS 1.3</span>
+                            <span>DEVICE COMPATIBILITY:</span>
+                            <span className="text-white">Phones, Tablets &amp; Laptops</span>
                           </div>
                         </div>
                       )}
 
                       {/* Visual footer bar */}
                       <div className="pt-4 border-t border-white/[0.06] flex items-center justify-between font-mono text-[11px] text-[#52525b]">
-                        <span>SILICONTECHIE ARCHITECTURAL LABS</span>
-                        <span className="text-[#ff6200]">BUILD VERIFIED</span>
+                        <span>SILICONTECHIE PRODUCT DESIGN</span>
+                        <span className="text-[#ff6200]">PROVEN BUSINESS VALUE</span>
                       </div>
                     </div>
                   </div>
