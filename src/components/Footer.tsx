@@ -15,10 +15,10 @@ export default function Footer() {
             <div className="flex items-center gap-2.5">
               <span className="relative flex h-4 w-4 items-center justify-center">
                 <span className="absolute inset-0 rounded-[2px] border border-white/20" />
-                <span className="h-1 w-1 bg-[#00ea90]" />
+                <span className="h-1 w-1 bg-[#ff6200]" />
               </span>
               <span className="font-mono tracking-widest text-xs font-bold text-[#f4f4f6]">
-                SILICONTECHIE<span className="text-[#00ea90]">.AI</span>
+                SILICONTECHIE<span className="text-[#ff6200]">.AI</span>
               </span>
             </div>
 
@@ -43,27 +43,27 @@ export default function Footer() {
               <span className="text-[#52525b] uppercase tracking-wider block">Index</span>
               <ul className="space-y-2 text-[#9ca3af]">
                 <li>
-                  <a href="#work" className="hover:text-[#00ea90] transition-colors">
+                  <a href="#work" className="hover:text-[#ff6200] transition-colors">
                     Work
                   </a>
                 </li>
                 <li>
-                  <a href="#services" className="hover:text-[#00ea90] transition-colors">
+                  <a href="#services" className="hover:text-[#ff6200] transition-colors">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="#engineering" className="hover:text-[#00ea90] transition-colors">
+                  <a href="#engineering" className="hover:text-[#ff6200] transition-colors">
                     Architecture
                   </a>
                 </li>
                 <li>
-                  <a href="#ai" className="hover:text-[#00ea90] transition-colors">
+                  <a href="#ai" className="hover:text-[#ff6200] transition-colors">
                     AI Systems
                   </a>
                 </li>
                 <li>
-                  <a href="#approach" className="hover:text-[#00ea90] transition-colors">
+                  <a href="#approach" className="hover:text-[#ff6200] transition-colors">
                     Approach
                   </a>
                 </li>
@@ -78,7 +78,7 @@ export default function Footer() {
                     href="https://github.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-[#00ea90] transition-colors"
+                    className="hover:text-[#ff6200] transition-colors"
                   >
                     GitHub
                   </a>
@@ -88,7 +88,7 @@ export default function Footer() {
                     href="https://linkedin.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-[#00ea90] transition-colors"
+                    className="hover:text-[#ff6200] transition-colors"
                   >
                     LinkedIn
                   </a>
@@ -98,7 +98,7 @@ export default function Footer() {
                     href="https://x.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-[#00ea90] transition-colors"
+                    className="hover:text-[#ff6200] transition-colors"
                   >
                     X / Twitter
                   </a>
@@ -106,7 +106,7 @@ export default function Footer() {
                 <li>
                   <a
                     href="mailto:hello@silicontechie.ai"
-                    className="hover:text-[#00ea90] transition-colors"
+                    className="hover:text-[#ff6200] transition-colors"
                   >
                     Direct Email
                   </a>
@@ -117,8 +117,8 @@ export default function Footer() {
 
           {/* Operational Status Box */}
           <div className="md:col-span-3 p-4 rounded-xl border border-white/[0.06] bg-black/40 font-mono text-xs space-y-2">
-            <div className="flex items-center gap-2 text-[#00ea90]">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#00ea90] animate-pulse" />
+            <div className="flex items-center gap-2 text-[#ff6200]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#ff6200] animate-pulse" />
               <span className="font-semibold text-[11px]">ALL SYSTEMS RUNNING</span>
             </div>
             <p className="text-[11px] text-[#52525b] leading-relaxed">

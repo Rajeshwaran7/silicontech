@@ -71,7 +71,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
-      <div className="relative min-h-screen bg-[#060709] text-[#f4f4f6] selection:bg-[#00ea90]/20 selection:text-[#00ea90]">
+      <div className="relative min-h-screen bg-[#060709] text-[#f4f4f6] selection:bg-[#ff6200]/20 selection:text-[#ff6200]">
         {/* Subtle architectural background texture */}
         <div className="fixed inset-0 bg-grid-pattern opacity-40 pointer-events-none z-0" />
 

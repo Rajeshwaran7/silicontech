@@ -31,9 +31,9 @@ export default function ScrollTransition() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Editorial Subtitle */}
-        <div className="font-mono text-xs uppercase tracking-widest text-[#00ea90] mb-8 flex items-center gap-2">
+        <div className="font-mono text-xs uppercase tracking-widest text-[#ff6200] mb-8 flex items-center gap-2">
           <span>{"// 02 CONTINUUM"}</span>
-          <span className="w-8 h-[1px] bg-[#00ea90]/40" />
+          <span className="w-8 h-[1px] bg-[#ff6200]/40" />
         </div>
 
         {/* Cinematic Scroll Statement */}
@@ -46,7 +46,7 @@ export default function ScrollTransition() {
               Phase 01
             </span>
             <span>From idea</span>
-            <span className="text-[#00ea90] font-light">→</span>
+            <span className="text-[#ff6200] font-light">→</span>
           </motion.div>
 
           <motion.div
@@ -59,17 +59,17 @@ export default function ScrollTransition() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f4f4f6] to-[#9ca3af]">
               to infrastructure
             </span>
-            <span className="text-[#00ea90] font-light">→</span>
+            <span className="text-[#ff6200] font-light">→</span>
           </motion.div>
 
           <motion.div
             style={{ opacity: opacityProduct, x: xProduct }}
             className="flex items-center gap-4 sm:gap-6 pl-12 sm:pl-24"
           >
-            <span className="font-mono text-xs sm:text-sm text-[#00ea90] uppercase tracking-widest">
+            <span className="font-mono text-xs sm:text-sm text-[#ff6200] uppercase tracking-widest">
               Phase 03
             </span>
-            <span className="text-[#00ea90] font-semibold">to product.</span>
+            <span className="text-[#ff6200] font-semibold">to product.</span>
           </motion.div>
         </div>
 
@@ -83,7 +83,7 @@ export default function ScrollTransition() {
 
           <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm text-[#9ca3af]">
             <div className="space-y-2">
-              <span className="font-mono text-xs text-[#00ea90] uppercase block">
+              <span className="font-mono text-xs text-[#ff6200] uppercase block">
                 01 / Precision
               </span>
               <p className="text-xs sm:text-sm text-[#9ca3af] leading-relaxed">
@@ -92,7 +92,7 @@ export default function ScrollTransition() {
             </div>
 
             <div className="space-y-2">
-              <span className="font-mono text-xs text-[#00ea90] uppercase block">
+              <span className="font-mono text-xs text-[#ff6200] uppercase block">
                 02 / Resilience
               </span>
               <p className="text-xs sm:text-sm text-[#9ca3af] leading-relaxed">
@@ -101,7 +101,7 @@ export default function ScrollTransition() {
             </div>
 
             <div className="space-y-2">
-              <span className="font-mono text-xs text-[#00ea90] uppercase block">
+              <span className="font-mono text-xs text-[#ff6200] uppercase block">
                 03 / Intelligence
               </span>
               <p className="text-xs sm:text-sm text-[#9ca3af] leading-relaxed">

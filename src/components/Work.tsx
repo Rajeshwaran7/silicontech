@@ -70,9 +70,9 @@ export default function Work() {
       {/* Header */}
       <div className="mb-20 sm:mb-28 flex flex-col sm:flex-row sm:items-end justify-between gap-6">
         <div>
-          <div className="font-mono text-xs uppercase tracking-widest text-[#00ea90] mb-4 flex items-center gap-2">
+          <div className="font-mono text-xs uppercase tracking-widest text-[#ff6200] mb-4 flex items-center gap-2">
             <span>{"// 05 CASE CONCEPTS"}</span>
-            <span className="w-8 h-[1px] bg-[#00ea90]/40" />
+            <span className="w-8 h-[1px] bg-[#ff6200]/40" />
           </div>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-medium tracking-tight text-[#f4f4f6]">
             Selected work
@@ -109,7 +109,7 @@ export default function Work() {
                     isEven ? "lg:col-span-7" : "lg:col-span-7 lg:order-2"
                   } relative`}
                 >
-                  <div className="rounded-2xl border border-white/[0.08] bg-[#090b10] overflow-hidden transition-all duration-500 shadow-2xl group-hover:border-[#00ea90]/40 group-hover:shadow-[0_0_35px_rgba(0,234,144,0.08)]">
+                  <div className="rounded-2xl border border-white/[0.08] bg-[#090b10] overflow-hidden transition-all duration-500 shadow-2xl group-hover:border-[#ff6200]/40 group-hover:shadow-[0_0_35px_rgba(255,98,0,0.12)]">
                     {/* Top Interface Bar with concept badge */}
                     <div className="flex items-center justify-between px-5 py-3.5 border-b border-white/[0.06] bg-black/40 text-xs font-mono">
                       <div className="flex items-center gap-2.5">
@@ -129,7 +129,7 @@ export default function Work() {
                           }
                           className={`px-2 py-0.5 rounded text-[10px] uppercase tracking-wider transition-colors ${
                             currentTab === "ui"
-                              ? "bg-[#00ea90]/15 text-[#00ea90] border border-[#00ea90]/30"
+                              ? "bg-[#ff6200]/15 text-[#ff6200] border border-[#ff6200]/30"
                               : "text-[#52525b] hover:text-[#9ca3af]"
                           }`}
                         >
@@ -141,13 +141,13 @@ export default function Work() {
                           }
                           className={`px-2 py-0.5 rounded text-[10px] uppercase tracking-wider transition-colors ${
                             currentTab === "telemetry"
-                              ? "bg-[#00ea90]/15 text-[#00ea90] border border-[#00ea90]/30"
+                              ? "bg-[#ff6200]/15 text-[#ff6200] border border-[#ff6200]/30"
                               : "text-[#52525b] hover:text-[#9ca3af]"
                           }`}
                         >
                           Telemetry
                         </button>
-                        <span className="ml-2 px-2 py-0.5 rounded-full bg-white/[0.05] border border-white/10 text-[10px] text-[#00ea90] font-semibold">
+                        <span className="ml-2 px-2 py-0.5 rounded-full bg-white/[0.05] border border-white/10 text-[10px] text-[#ff6200] font-semibold">
                           {project.conceptLabel}
                         </span>
                       </div>
@@ -161,12 +161,12 @@ export default function Work() {
                             <div className="space-y-4">
                               <div className="flex items-center justify-between pb-3 border-b border-white/[0.04]">
                                 <div className="flex items-center gap-2">
-                                  <Cpu className="w-4 h-4 text-[#00ea90]" />
+                                  <Cpu className="w-4 h-4 text-[#ff6200]" />
                                   <span className="text-xs font-mono font-medium text-white">
                                     Agent Swarm Router // Cluster 09
                                   </span>
                                 </div>
-                                <span className="font-mono text-[11px] text-[#00ea90]">
+                                <span className="font-mono text-[11px] text-[#ff6200]">
                                   Active • 1,240 tokens/s
                                 </span>
                               </div>
@@ -175,17 +175,17 @@ export default function Work() {
                                 <div className="p-3 rounded-lg bg-black/40 border border-white/[0.05]">
                                   <div className="text-[10px] text-[#52525b]">ROUTER INGRESS</div>
                                   <div className="text-[#f4f4f6] font-medium mt-1">99.98% OK</div>
-                                  <div className="text-[10px] text-[#00ea90] mt-0.5">p50: 12ms</div>
+                                  <div className="text-[10px] text-[#ff6200] mt-0.5">p50: 12ms</div>
                                 </div>
                                 <div className="p-3 rounded-lg bg-black/40 border border-white/[0.05]">
                                   <div className="text-[10px] text-[#52525b]">MODEL CLUSTERS</div>
                                   <div className="text-[#f4f4f6] font-medium mt-1">3 Models Live</div>
-                                  <div className="text-[10px] text-[#00ea90] mt-0.5">Auto-Balanced</div>
+                                  <div className="text-[10px] text-[#ff6200] mt-0.5">Auto-Balanced</div>
                                 </div>
                                 <div className="p-3 rounded-lg bg-black/40 border border-white/[0.05]">
                                   <div className="text-[10px] text-[#52525b]">SEMANTIC RETRIEVAL</div>
                                   <div className="text-[#f4f4f6] font-medium mt-1">0.96 Score</div>
-                                  <div className="text-[10px] text-[#00ea90] mt-0.5">Vector Cosine</div>
+                                  <div className="text-[10px] text-[#ff6200] mt-0.5">Vector Cosine</div>
                                 </div>
                               </div>
 
@@ -193,7 +193,7 @@ export default function Work() {
                               <div className="mt-4 p-3.5 rounded-lg bg-black/60 border border-white/[0.05] font-mono text-[11px] text-[#9ca3af] space-y-1.5">
                                 <div className="text-[#52525b]">&gt; [AGENT-01] Query parsed: Synthesizing architecture dependency tree...</div>
                                 <div className="text-white">&gt; [AGENT-02] Tool invocation: schema_verify() returned status: SUCCESS</div>
-                                <div className="text-[#00ea90]">&gt; [ROUTER] Emitted verified response in 184ms</div>
+                                <div className="text-[#ff6200]">&gt; [ROUTER] Emitted verified response in 184ms</div>
                               </div>
                             </div>
                           )}
@@ -202,12 +202,12 @@ export default function Work() {
                             <div className="space-y-4">
                               <div className="flex items-center justify-between pb-3 border-b border-white/[0.04]">
                                 <div className="flex items-center gap-2">
-                                  <GitBranch className="w-4 h-4 text-[#00ea90]" />
+                                  <GitBranch className="w-4 h-4 text-[#ff6200]" />
                                   <span className="text-xs font-mono font-medium text-white">
                                     Transactional DAG Pipeline // Node 14
                                   </span>
                                 </div>
-                                <span className="font-mono text-[11px] text-[#00ea90]">
+                                <span className="font-mono text-[11px] text-[#ff6200]">
                                   0 Retries • Idempotent
                                 </span>
                               </div>
@@ -215,15 +215,15 @@ export default function Work() {
                               <div className="space-y-2.5 font-mono text-xs">
                                 <div className="flex items-center justify-between p-2.5 rounded bg-black/40 border border-white/[0.05]">
                                   <span className="text-[#9ca3af]">01. Event Queue Ingest</span>
-                                  <span className="text-[#00ea90]">54,200 msg/s</span>
+                                  <span className="text-[#ff6200]">54,200 msg/s</span>
                                 </div>
                                 <div className="flex items-center justify-between p-2.5 rounded bg-black/40 border border-white/[0.05]">
                                   <span className="text-[#9ca3af]">02. Distributed Ledger Sign</span>
-                                  <span className="text-[#00ea90]">Verified RSA-4096</span>
+                                  <span className="text-[#ff6200]">Verified RSA-4096</span>
                                 </div>
                                 <div className="flex items-center justify-between p-2.5 rounded bg-black/40 border border-white/[0.05]">
                                   <span className="text-[#9ca3af]">03. Postgres Multi-Master Sync</span>
-                                  <span className="text-[#00ea90]">ACID Guaranteed</span>
+                                  <span className="text-[#ff6200]">ACID Guaranteed</span>
                                 </div>
                               </div>
                             </div>
@@ -233,12 +233,12 @@ export default function Work() {
                             <div className="space-y-4">
                               <div className="flex items-center justify-between pb-3 border-b border-white/[0.04]">
                                 <div className="flex items-center gap-2">
-                                  <Terminal className="w-4 h-4 text-[#00ea90]" />
+                                  <Terminal className="w-4 h-4 text-[#ff6200]" />
                                   <span className="text-xs font-mono font-medium text-white">
                                     Adaptive Semantic Handoff Engine
                                   </span>
                                 </div>
-                                <span className="font-mono text-[11px] text-[#00ea90]">
+                                <span className="font-mono text-[11px] text-[#ff6200]">
                                   Live Context 98.4%
                                 </span>
                               </div>
@@ -250,12 +250,12 @@ export default function Work() {
                                 </div>
                                 <div className="p-3 rounded bg-black/40 border border-white/[0.05]">
                                   <div className="text-[#52525b] text-[10px]">AUDIO TRANSCRIPTION</div>
-                                  <div className="text-[#00ea90] mt-1">&lt; 140ms Streaming</div>
+                                  <div className="text-[#ff6200] mt-1">&lt; 140ms Streaming</div>
                                 </div>
                               </div>
 
                               <div className="p-3 rounded-lg bg-black/60 border border-white/[0.05] font-mono text-[11px] text-[#9ca3af]">
-                                <span className="text-[#00ea90]">[REAL-TIME VECTOR]</span> Context memory graph hydrated from past 4 sessions.
+                                <span className="text-[#ff6200]">[REAL-TIME VECTOR]</span> Context memory graph hydrated from past 4 sessions.
                               </div>
                             </div>
                           )}
@@ -264,12 +264,12 @@ export default function Work() {
                             <div className="space-y-4">
                               <div className="flex items-center justify-between pb-3 border-b border-white/[0.04]">
                                 <div className="flex items-center gap-2">
-                                  <Cpu className="w-4 h-4 text-[#00ea90]" />
+                                  <Cpu className="w-4 h-4 text-[#ff6200]" />
                                   <span className="text-xs font-mono font-medium text-white">
                                     Self-Healing Streaming Engine
                                   </span>
                                 </div>
-                                <span className="font-mono text-[11px] text-[#00ea90]">
+                                <span className="font-mono text-[11px] text-[#ff6200]">
                                   Partition Health 100%
                                 </span>
                               </div>
@@ -281,7 +281,7 @@ export default function Work() {
                                 </div>
                                 <div className="p-2.5 rounded bg-black/40 border border-white/[0.05]">
                                   <div className="text-[10px] text-[#52525b]">ANOMALIES</div>
-                                  <div className="text-[#00ea90] mt-1">0 Detected</div>
+                                  <div className="text-[#ff6200] mt-1">0 Detected</div>
                                 </div>
                                 <div className="p-2.5 rounded bg-black/40 border border-white/[0.05]">
                                   <div className="text-[10px] text-[#52525b]">SCHEMA EVOLUTION</div>
@@ -302,11 +302,11 @@ export default function Work() {
                           </div>
                           <div className="flex justify-between">
                             <span>GARBAGE COLLECTION PAUSE:</span>
-                            <span className="text-[#00ea90]">&lt; 1.4ms</span>
+                            <span className="text-[#ff6200]">&lt; 1.4ms</span>
                           </div>
                           <div className="flex justify-between">
                             <span>REPLICATION LAG:</span>
-                            <span className="text-[#00ea90]">0.00ms (SYNC)</span>
+                            <span className="text-[#ff6200]">0.00ms (SYNC)</span>
                           </div>
                           <div className="flex justify-between">
                             <span>CRYPTO CERT VALIDATION:</span>
@@ -318,7 +318,7 @@ export default function Work() {
                       {/* Visual footer bar */}
                       <div className="pt-4 border-t border-white/[0.06] flex items-center justify-between font-mono text-[11px] text-[#52525b]">
                         <span>SILICONTECHIE ARCHITECTURAL LABS</span>
-                        <span className="text-[#00ea90]">BUILD VERIFIED</span>
+                        <span className="text-[#ff6200]">BUILD VERIFIED</span>
                       </div>
                     </div>
                   </div>
@@ -330,7 +330,7 @@ export default function Work() {
                     isEven ? "lg:col-span-5" : "lg:col-span-5 lg:order-1"
                   }`}
                 >
-                  <div className="flex items-center gap-3 font-mono text-xs text-[#00ea90] mb-3">
+                  <div className="flex items-center gap-3 font-mono text-xs text-[#ff6200] mb-3">
                     <span>PROJECT {project.number}</span>
                     <span className="text-white/20">/</span>
                     <span className="text-[#9ca3af] uppercase tracking-wider">
@@ -341,7 +341,7 @@ export default function Work() {
                   <h3 className="text-2xl sm:text-4xl font-medium text-[#f4f4f6] tracking-tight mb-4 transition-transform duration-300 group-hover:translate-x-1.5 flex items-center gap-3">
                     <span>{project.title}</span>
                     <ArrowUpRight
-                      className={`w-6 h-6 text-[#00ea90] transition-all duration-300 ${
+                      className={`w-6 h-6 text-[#ff6200] transition-all duration-300 ${
                         isHovered
                           ? "opacity-100 translate-x-0 translate-y-0"
                           : "opacity-0 -translate-x-2 translate-y-2"

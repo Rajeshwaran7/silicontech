@@ -88,9 +88,9 @@ export default function Engineering() {
     <section id="engineering" className="py-28 sm:py-36 px-6 sm:px-8 max-w-7xl mx-auto border-t border-white/[0.06]">
       {/* Section Header */}
       <div className="mb-16 sm:mb-20">
-        <div className="font-mono text-xs uppercase tracking-widest text-[#00ea90] mb-4 flex items-center gap-2">
+        <div className="font-mono text-xs uppercase tracking-widest text-[#ff6200] mb-4 flex items-center gap-2">
           <span>{"// 04 ARCHITECTURE"}</span>
-          <span className="w-8 h-[1px] bg-[#00ea90]/40" />
+          <span className="w-8 h-[1px] bg-[#ff6200]/40" />
         </div>
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-medium tracking-tight text-[#f4f4f6] max-w-2xl leading-[1.12]">
           Built beneath the interface.
@@ -116,7 +116,7 @@ export default function Engineering() {
                   onMouseEnter={() => setActiveLayer(layer.id)}
                   className={`group relative p-5 sm:p-6 rounded-xl border transition-all duration-300 cursor-pointer ${
                     isSelected
-                      ? "bg-[#0b0d13] border-[#00ea90]/50 shadow-[0_0_20px_rgba(0,234,144,0.06)]"
+                      ? "bg-[#0b0d13] border-[#ff6200]/50 shadow-[0_0_20px_rgba(255,98,0,0.1)]"
                       : "bg-white/[0.015] border-white/[0.06] hover:border-white/20 hover:bg-white/[0.03]"
                   }`}
                 >
@@ -124,7 +124,7 @@ export default function Engineering() {
                     <div className="flex items-center gap-4">
                       <span
                         className={`font-mono text-xs transition-colors ${
-                          isSelected ? "text-[#00ea90]" : "text-[#52525b]"
+                          isSelected ? "text-[#ff6200]" : "text-[#52525b]"
                         }`}
                       >
                         {layer.number}
@@ -133,7 +133,7 @@ export default function Engineering() {
                       <div
                         className={`p-2 rounded-lg border transition-colors ${
                           isSelected
-                            ? "bg-[#00ea90]/10 border-[#00ea90]/30 text-[#00ea90]"
+                            ? "bg-[#ff6200]/10 border-[#ff6200]/30 text-[#ff6200]"
                             : "bg-white/[0.02] border-white/[0.06] text-[#9ca3af]"
                         }`}
                       >
@@ -156,7 +156,7 @@ export default function Engineering() {
                       </span>
                       <span
                         className={`w-2 h-2 rounded-full transition-all ${
-                          isSelected ? "bg-[#00ea90] shadow-[0_0_8px_#00ea90]" : "bg-white/10"
+                          isSelected ? "bg-[#ff6200] shadow-[0_0_8px_#ff6200]" : "bg-white/10"
                         }`}
                       />
                     </div>
@@ -180,11 +180,11 @@ export default function Engineering() {
             <div>
               {/* Top status */}
               <div className="flex items-center justify-between border-b border-white/[0.06] pb-4 mb-6">
-                <span className="font-mono text-xs text-[#00ea90] uppercase tracking-wider">
+                <span className="font-mono text-xs text-[#ff6200] uppercase tracking-wider">
                   LAYER TELEMETRY // {currentLayer.number}
                 </span>
                 <span className="flex items-center gap-1.5 text-xs font-mono text-[#9ca3af]">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#00ea90]" />
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#ff6200]" />
                   SYNCED
                 </span>
               </div>
@@ -193,7 +193,7 @@ export default function Engineering() {
               <h4 className="text-2xl sm:text-3xl font-medium text-[#f4f4f6] mb-2 tracking-tight">
                 {currentLayer.name} Architecture
               </h4>
-              <p className="font-mono text-xs text-[#00ea90] mb-4">
+              <p className="font-mono text-xs text-[#ff6200] mb-4">
                 {currentLayer.role}
               </p>
               <p className="text-sm text-[#9ca3af] leading-relaxed mb-8">
@@ -208,7 +208,7 @@ export default function Engineering() {
                 </div>
                 <div className="p-3 rounded-lg bg-black/40 border border-white/[0.04] flex items-center justify-between">
                   <span className="text-[#52525b]">BENCHMARK TARGET</span>
-                  <span className="text-[#00ea90]">{currentLayer.latencyBudget}</span>
+                  <span className="text-[#ff6200]">{currentLayer.latencyBudget}</span>
                 </div>
               </div>
             </div>
@@ -258,7 +258,7 @@ export default function Engineering() {
             <span className="text-white/10">•</span>
             <span>Docker</span>
             <span className="text-white/10">•</span>
-            <span className="text-[#00ea90]">Autonomous AI</span>
+            <span className="text-[#ff6200]">Autonomous AI</span>
           </div>
         </div>
       </div>

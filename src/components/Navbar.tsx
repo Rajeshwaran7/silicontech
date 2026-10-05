@@ -39,16 +39,16 @@ export default function Navbar({ onOpenEnquiry }: NavbarProps) {
         {/* Brand Mark */}
         <a
           href="#"
-          className="group flex items-center gap-2.5 text-sm font-semibold tracking-wider text-[#f4f4f6] hover:text-[#00ea90] transition-colors"
+          className="group flex items-center gap-2.5 text-sm font-semibold tracking-wider text-[#f4f4f6] hover:text-[#ff6200] transition-colors"
           aria-label="SiliconTechie.ai Home"
         >
           {/* Custom Silicon Geometric Glyph */}
           <span className="relative flex h-5 w-5 items-center justify-center">
-            <span className="absolute inset-0 rounded-[3px] border border-white/20 group-hover:border-[#00ea90]/60 transition-colors" />
-            <span className="h-1.5 w-1.5 rounded-[1px] bg-[#00ea90] shadow-[0_0_8px_#00ea90]" />
+            <span className="absolute inset-0 rounded-[3px] border border-white/20 group-hover:border-[#ff6200]/60 transition-colors" />
+            <span className="h-1.5 w-1.5 rounded-[1px] bg-[#ff6200] shadow-[0_0_8px_#ff6200]" />
           </span>
           <span className="font-mono tracking-widest text-[13px] font-bold">
-            SILICONTECHIE<span className="text-[#00ea90]">.AI</span>
+            SILICONTECHIE<span className="text-[#ff6200]">.AI</span>
           </span>
         </a>
 
@@ -61,7 +61,7 @@ export default function Navbar({ onOpenEnquiry }: NavbarProps) {
             <a
               key={link.label}
               href={link.href}
-              className="hover:text-[#f4f4f6] transition-colors relative py-1 hover:after:w-full after:w-0 after:h-[1px] after:bg-[#00ea90] after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-200"
+              className="hover:text-[#f4f4f6] transition-colors relative py-1 hover:after:w-full after:w-0 after:h-[1px] after:bg-[#ff6200] after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-200"
             >
               {link.label}
             </a>
@@ -72,10 +72,10 @@ export default function Navbar({ onOpenEnquiry }: NavbarProps) {
         <div className="hidden md:flex items-center gap-4">
           <button
             onClick={onOpenEnquiry}
-            className="group relative inline-flex items-center gap-2 px-4 py-2 text-xs font-mono font-medium tracking-wide text-[#f4f4f6] rounded-full border border-white/10 bg-white/[0.03] hover:bg-white/[0.08] hover:border-[#00ea90]/40 transition-all duration-200 cursor-pointer"
+            className="group relative inline-flex items-center gap-2 px-4 py-2 text-xs font-mono font-medium tracking-wide text-[#f4f4f6] rounded-full border border-white/10 bg-white/[0.03] hover:bg-white/[0.08] hover:border-[#ff6200]/40 transition-all duration-200 cursor-pointer"
           >
             <span>Let&apos;s Talk</span>
-            <ArrowUpRight className="w-3.5 h-3.5 text-[#00ea90] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            <ArrowUpRight className="w-3.5 h-3.5 text-[#ff6200] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </button>
         </div>
 
@@ -110,7 +110,7 @@ export default function Navbar({ onOpenEnquiry }: NavbarProps) {
                 setMobileMenuOpen(false);
                 onOpenEnquiry();
               }}
-              className="mt-3 flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-[#00ea90] text-[#060709] font-mono text-xs font-bold tracking-wide"
+              className="mt-3 flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-[#ff6200] text-[#060709] font-mono text-xs font-bold tracking-wide"
             >
               <span>Let&apos;s Talk</span>
               <ArrowUpRight className="w-4 h-4" />

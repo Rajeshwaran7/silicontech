@@ -189,7 +189,7 @@ export default function SystemVisual() {
         ctx.moveTo(nA.x, nA.y);
         ctx.lineTo(nB.x, nB.y);
         ctx.strokeStyle = isNearMouse
-          ? `rgba(0, 234, 144, ${alpha})`
+          ? `rgba(255, 98, 0, ${alpha})`
           : `rgba(255, 255, 255, ${alpha})`;
         ctx.lineWidth = isNearMouse ? 1.2 : 0.75;
         ctx.stroke();
@@ -217,8 +217,8 @@ export default function SystemVisual() {
           // Packet glow
           ctx.beginPath();
           ctx.arc(px, py, 1.8, 0, Math.PI * 2);
-          ctx.fillStyle = "#00ea90";
-          ctx.shadowColor = "#00ea90";
+          ctx.fillStyle = "#ff6200";
+          ctx.shadowColor = "#ff6200";
           ctx.shadowBlur = 6;
           ctx.fill();
           ctx.shadowBlur = 0; // reset
@@ -247,12 +247,12 @@ export default function SystemVisual() {
         if (node.type === "core" || hoverFactor > 0.4) {
           // Precision square node
           const size = radius * 2.2 + hoverFactor * 2;
-          ctx.fillStyle = hoverFactor > 0 ? "#00ea90" : "rgba(255, 255, 255, 0.7)";
+          ctx.fillStyle = hoverFactor > 0 ? "#ff6200" : "rgba(255, 255, 255, 0.7)";
           ctx.fillRect(-size / 2, -size / 2, size, size);
 
           // Subtle surrounding bracket
           if (hoverFactor > 0.2) {
-            ctx.strokeStyle = `rgba(0, 234, 144, ${hoverFactor * 0.8})`;
+            ctx.strokeStyle = `rgba(255, 98, 0, ${hoverFactor * 0.8})`;
             ctx.lineWidth = 0.8;
             ctx.strokeRect(-size, -size, size * 2, size * 2);
           }
@@ -262,7 +262,7 @@ export default function SystemVisual() {
           ctx.arc(0, 0, radius, 0, Math.PI * 2);
           ctx.fillStyle =
             node.layer === 4
-              ? "rgba(0, 234, 144, 0.6)"
+              ? "rgba(255, 98, 0, 0.6)"
               : "rgba(255, 255, 255, 0.45)";
           ctx.fill();
         }

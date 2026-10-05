@@ -66,7 +66,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark scroll-smooth selection:bg-emerald-500/20 selection:text-emerald-300">
+    <html lang="en" className="dark scroll-smooth selection:bg-orange-500/20 selection:text-orange-400">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta name="theme-color" content="#060709" />

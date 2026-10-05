@@ -56,9 +56,9 @@ export default function Process() {
     <section id="approach" className="py-28 sm:py-36 px-6 sm:px-8 max-w-7xl mx-auto border-t border-white/[0.06]">
       {/* Header */}
       <div className="mb-20 sm:mb-28">
-        <div className="font-mono text-xs uppercase tracking-widest text-[#00ea90] mb-4 flex items-center gap-2">
+        <div className="font-mono text-xs uppercase tracking-widest text-[#ff6200] mb-4 flex items-center gap-2">
           <span>{"// 07 METHODOLOGY"}</span>
-          <span className="w-8 h-[1px] bg-[#00ea90]/40" />
+          <span className="w-8 h-[1px] bg-[#ff6200]/40" />
         </div>
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-medium tracking-tight text-[#f4f4f6]">
           The SiliconTechie approach
@@ -90,9 +90,9 @@ export default function Process() {
                   <div
                     className={`w-7 h-7 rounded-full border flex items-center justify-center font-mono text-xs transition-all duration-300 ${
                       isSelected
-                        ? "bg-[#00ea90] border-[#00ea90] text-[#060709] font-bold shadow-[0_0_15px_rgba(0,234,144,0.4)]"
+                        ? "bg-[#ff6200] border-[#ff6200] text-[#060709] font-bold shadow-[0_0_15px_rgba(255,98,0,0.4)]"
                         : isCompleted
-                        ? "bg-white/10 border-[#00ea90]/50 text-[#00ea90]"
+                        ? "bg-white/10 border-[#ff6200]/50 text-[#ff6200]"
                         : "bg-[#060709] border-white/20 text-[#52525b] group-hover:border-white/50"
                     }`}
                   >
@@ -122,7 +122,7 @@ export default function Process() {
                     <span className="font-mono text-[10px] uppercase text-[#52525b] block mb-1">
                       Deliverable:
                     </span>
-                    <span className="text-xs font-mono text-[#00ea90]/90">
+                    <span className="text-xs font-mono text-[#ff6200]/90">
                       {step.deliverable}
                     </span>
                   </div>

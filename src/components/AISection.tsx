@@ -179,7 +179,7 @@ export default function AISection() {
       const pulse = Math.sin(time * 3) * 6;
       ctx.beginPath();
       ctx.arc(centroidX, centroidY, 32 + pulse, 0, Math.PI * 2);
-      ctx.strokeStyle = "rgba(0, 234, 144, 0.15)";
+      ctx.strokeStyle = "rgba(255, 98, 0, 0.15)";
       ctx.lineWidth = 1;
       ctx.stroke();
 
@@ -193,7 +193,7 @@ export default function AISection() {
         ctx.beginPath();
         ctx.moveTo(centroidX, centroidY);
         ctx.lineTo(ax, ay);
-        ctx.strokeStyle = "rgba(0, 234, 144, 0.4)";
+        ctx.strokeStyle = "rgba(255, 98, 0, 0.4)";
         ctx.lineWidth = 1;
         ctx.stroke();
 
@@ -206,7 +206,7 @@ export default function AISection() {
           ctx.beginPath();
           ctx.moveTo(ax, ay);
           ctx.lineTo(bx, by);
-          ctx.strokeStyle = "rgba(0, 234, 144, 0.25)";
+          ctx.strokeStyle = "rgba(255, 98, 0, 0.25)";
           ctx.lineWidth = 0.75;
           ctx.stroke();
         }
@@ -214,8 +214,8 @@ export default function AISection() {
         // Vector node dot
         ctx.beginPath();
         ctx.arc(ax, ay, 3, 0, Math.PI * 2);
-        ctx.fillStyle = "#00ea90";
-        ctx.shadowColor = "#00ea90";
+        ctx.fillStyle = "#ff6200";
+        ctx.shadowColor = "#ff6200";
         ctx.shadowBlur = 8;
         ctx.fill();
         ctx.shadowBlur = 0;
@@ -256,14 +256,14 @@ export default function AISection() {
     <section id="ai" className="py-28 sm:py-36 px-6 sm:px-8 max-w-7xl mx-auto border-t border-white/[0.06]">
       {/* Header */}
       <div className="mb-20 sm:mb-24">
-        <div className="font-mono text-xs uppercase tracking-widest text-[#00ea90] mb-4 flex items-center gap-2">
+        <div className="font-mono text-xs uppercase tracking-widest text-[#ff6200] mb-4 flex items-center gap-2">
           <span>{"// 06 ARTIFICIAL INTELLIGENCE"}</span>
-          <span className="w-8 h-[1px] bg-[#00ea90]/40" />
+          <span className="w-8 h-[1px] bg-[#ff6200]/40" />
         </div>
 
         <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight text-[#f4f4f6] leading-[1.08] max-w-3xl">
           Software is changing. <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f4f4f6] to-[#00ea90]">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f4f4f6] to-[#ff6200]">
             So are we.
           </span>
         </h2>
@@ -292,7 +292,7 @@ export default function AISection() {
                   <div className="flex items-center gap-4 sm:gap-6">
                     <span
                       className={`font-mono text-xs transition-colors ${
-                        isActive ? "text-[#00ea90]" : "text-[#52525b]"
+                        isActive ? "text-[#ff6200]" : "text-[#52525b]"
                       }`}
                     >
                       {svc.number}
@@ -310,7 +310,7 @@ export default function AISection() {
 
                   <span
                     className={`font-mono text-xs transition-colors ${
-                      isActive ? "text-[#00ea90]" : "text-[#52525b] group-hover:text-[#9ca3af]"
+                      isActive ? "text-[#ff6200]" : "text-[#52525b] group-hover:text-[#9ca3af]"
                     }`}
                   >
                     {isActive ? "[ACTIVE]" : "→"}
@@ -331,7 +331,7 @@ export default function AISection() {
                     {svc.metrics.map((m, idx) => (
                       <div key={idx} className="flex items-center gap-2">
                         <span className="text-[#52525b] text-[10px]">{m.label}:</span>
-                        <span className="text-[#00ea90] font-semibold">{m.value}</span>
+                        <span className="text-[#ff6200] font-semibold">{m.value}</span>
                       </div>
                     ))}
                   </div>
@@ -347,7 +347,7 @@ export default function AISection() {
             {/* Top Bar */}
             <div className="flex items-center justify-between border-b border-white/[0.06] pb-3 mb-4 text-xs font-mono">
               <div className="flex items-center gap-2 text-[#9ca3af]">
-                <Sparkles className="w-3.5 h-3.5 text-[#00ea90]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#ff6200]" />
                 <span>SEMANTIC VECTOR PROJECTION</span>
               </div>
               <span className="text-[#52525b]">1536-D EMBEDDING</span>
@@ -361,7 +361,7 @@ export default function AISection() {
             {/* Micro Details under visualization */}
             <div className="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between font-mono text-[11px] text-[#52525b]">
               <span>ACTIVE DOMAIN: {activeAI.title.toUpperCase()}</span>
-              <span className="text-[#00ea90]">REAL-TIME CONTEXT ENGINE</span>
+              <span className="text-[#ff6200]">REAL-TIME CONTEXT ENGINE</span>
             </div>
           </div>
         </div>

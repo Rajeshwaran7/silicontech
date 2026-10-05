@@ -74,7 +74,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
 
         {isSubmitted ? (
           <div className="py-12 text-center space-y-4">
-            <div className="w-12 h-12 rounded-full bg-[#00ea90]/10 border border-[#00ea90]/40 text-[#00ea90] flex items-center justify-center mx-auto">
+            <div className="w-12 h-12 rounded-full bg-[#ff6200]/10 border border-[#ff6200]/40 text-[#ff6200] flex items-center justify-center mx-auto">
               <Check className="w-6 h-6" />
             </div>
             <h3 className="text-2xl font-medium tracking-tight text-[#f4f4f6]">
@@ -83,7 +83,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
             <p className="text-sm text-[#9ca3af] max-w-md mx-auto leading-relaxed">
               Our engineering team has received your project parameters. We will review
               your architecture requirements and reply within 24 business hours to{" "}
-              <span className="text-[#00ea90] font-mono">{email}</span>.
+              <span className="text-[#ff6200] font-mono">{email}</span>.
             </p>
             <div className="pt-6">
               <button
@@ -100,7 +100,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
         ) : (
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <div className="font-mono text-[11px] text-[#00ea90] uppercase tracking-wider mb-1">
+              <div className="font-mono text-[11px] text-[#ff6200] uppercase tracking-wider mb-1">
                 PROJECT INITIATION
               </div>
               <h2
@@ -127,7 +127,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
                     onClick={() => setSelectedScope(scope)}
                     className={`px-3 py-1.5 rounded-full text-xs font-mono transition-all ${
                       selectedScope === scope
-                        ? "bg-[#00ea90] text-[#060709] font-semibold"
+                        ? "bg-[#ff6200] text-[#060709] font-semibold"
                         : "bg-white/[0.03] border border-white/[0.08] text-[#9ca3af] hover:text-white hover:border-white/20"
                     }`}
                   >
@@ -150,7 +150,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
                     onClick={() => setSelectedBudget(b)}
                     className={`py-2 px-3 rounded-lg text-xs font-mono text-center transition-all ${
                       selectedBudget === b
-                        ? "bg-white/[0.1] border border-[#00ea90] text-[#00ea90] font-semibold"
+                        ? "bg-white/[0.1] border border-[#ff6200] text-[#ff6200] font-semibold"
                         : "bg-white/[0.02] border border-white/[0.06] text-[#9ca3af] hover:text-white"
                     }`}
                   >
@@ -175,7 +175,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="name@company.com"
-                className="w-full px-4 py-3 rounded-lg bg-black/50 border border-white/[0.08] text-sm text-white placeholder-[#52525b] focus:outline-none focus:border-[#00ea90] transition-colors"
+                className="w-full px-4 py-3 rounded-lg bg-black/50 border border-white/[0.08] text-sm text-white placeholder-[#52525b] focus:outline-none focus:border-[#ff6200] transition-colors"
               />
             </div>
 
@@ -193,7 +193,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
                 value={details}
                 onChange={(e) => setDetails(e.target.value)}
                 placeholder="Describe the system, target timeline, or architectural constraints..."
-                className="w-full px-4 py-3 rounded-lg bg-black/50 border border-white/[0.08] text-sm text-white placeholder-[#52525b] focus:outline-none focus:border-[#00ea90] transition-colors resize-none"
+                className="w-full px-4 py-3 rounded-lg bg-black/50 border border-white/[0.08] text-sm text-white placeholder-[#52525b] focus:outline-none focus:border-[#ff6200] transition-colors resize-none"
               />
             </div>
 
@@ -205,7 +205,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#00ea90] text-[#060709] font-mono text-xs font-bold tracking-wide hover:bg-[#1aff9e] hover:shadow-[0_0_20px_rgba(0,234,144,0.4)] transition-all disabled:opacity-50 cursor-pointer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#ff6200] text-[#060709] font-mono text-xs font-bold tracking-wide hover:bg-[#ff771a] hover:shadow-[0_0_20px_rgba(255,98,0,0.4)] transition-all disabled:opacity-50 cursor-pointer"
               >
                 <span>{isSubmitting ? "Transmitting..." : "Send Brief"}</span>
                 <Send className="w-3.5 h-3.5" />
