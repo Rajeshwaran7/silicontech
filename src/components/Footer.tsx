@@ -30,6 +30,11 @@ export default function Footer() {
               Engineering modern software architectures, high-concurrency backends, and
               autonomous AI systems for global businesses.
             </p>
+
+            <div className="flex items-center gap-2 pt-1 text-[11px] font-mono text-[#52525b]">
+              <span>STUDIO LOCATIONS:</span>
+              <span className="text-[#9ca3af]">CHENNAI • THOOTHUKUDI</span>
+            </div>
           </div>
 
           {/* Nav Links */}
@@ -124,8 +129,10 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/[0.04] flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-[#52525b]">
-          <div>
-            &copy; {currentYear} SILICONTECHIE.AI. ALL RIGHTS RESERVED.
+          <div className="flex items-center gap-3">
+            <span>&copy; {currentYear} SILICONTECHIE.AI. ALL RIGHTS RESERVED.</span>
+            <span className="text-white/10 hidden sm:inline">•</span>
+            <span className="text-[#9ca3af] hidden sm:inline">CHENNAI &amp; THOOTHUKUDI</span>
           </div>
           <div className="text-[11px] text-[#9ca3af]">
             WE BUILD WHAT COMES NEXT.

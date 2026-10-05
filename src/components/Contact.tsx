@@ -81,7 +81,7 @@ export default function Contact({ onOpenEnquiry }: ContactProps) {
             <span className="w-2 h-2 rounded-full bg-[#00ea90] animate-ping" />
             <span className="text-[#9ca3af]">NOW BOOKING Q2/Q3 CYCLES</span>
           </div>
-          <div>BENGALURU • SAN FRANCISCO • GLOBAL</div>
+          <div>CHENNAI • THOOTHUKUDI • GLOBAL</div>
           <div>DIRECT ADVISORY AVAILABLE</div>
         </div>
       </div>

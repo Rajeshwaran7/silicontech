@@ -47,6 +47,20 @@ export default function Home() {
       email: "hello@silicontechie.ai",
       contactType: "customer service",
     },
+    address: [
+      {
+        "@type": "PostalAddress",
+        addressLocality: "Chennai",
+        addressRegion: "Tamil Nadu",
+        addressCountry: "IN",
+      },
+      {
+        "@type": "PostalAddress",
+        addressLocality: "Thoothukudi",
+        addressRegion: "Tamil Nadu",
+        addressCountry: "IN",
+      },
+    ],
   };
 
   return (
