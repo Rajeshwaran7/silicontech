@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <rect width="180" height="180" rx="40" fill="#060709" />
+  <!-- Silicon perimeter frame -->
+  <rect x="25" y="25" width="130" height="130" rx="24" fill="#0b0d13" stroke="#222834" stroke-width="6" />
+  
+  <!-- Architectural Solar Orange corner guides -->
+  <path d="M25 55 L25 25 L55 25" stroke="#ff6200" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.9" />
+  <path d="M125 25 L155 25 L155 55" stroke="#ff6200" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.9" />
+  <path d="M25 125 L25 155 L55 155" stroke="#ff6200" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.9" />
+  <path d="M125 155 L155 155 L155 125" stroke="#ff6200" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.9" />
+  
+  <!-- Central silicon core emitter -->
+  <rect x="65" y="65" width="50" height="50" rx="14" fill="#ff6200" />
+  <circle cx="90" cy="90" r="10" fill="#ffffff" />
+</svg>

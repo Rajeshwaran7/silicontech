@@ -58,6 +58,15 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: [
+      { url: "/apple-icon.svg", type: "image/svg+xml" },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -68,6 +77,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth selection:bg-orange-500/20 selection:text-orange-400">
       <head>
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-icon.svg" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta name="theme-color" content="#060709" />
       </head>
